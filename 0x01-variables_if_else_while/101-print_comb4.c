@@ -1,5 +1,9 @@
 #include <stdio.h>
-/** * main - Prints numbers between 012 to 789. * * Return: Always 0 (Success) */ 
+/** 
+ * main - Prints numbers between 012 to 789.
+ *
+ * Return: Always 0 (Success) 
+ */ 
 int main(void)
 {
 	int i, e, g;
