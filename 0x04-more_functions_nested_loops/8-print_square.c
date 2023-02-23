@@ -1,28 +1,25 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_square - a function that prints a square, followed by a new line
- * @size: size of both width and length
- * Return: a square made of '#'
+ * print_square - Prints a squareusing the character #.
+ * @size: The size of the square.
  */
 void print_square(int size)
 {
-	int co, ro;
+	int hgt, wid;
 
-	if (size <= 0)
+	if (size > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (co = 1; co <= size; co++)
+		for (hgt = 0; hgt < size; hgt++)
 		{
-			_putchar('#');
-			for (ro = 2; ro <= size; ro++)
-			{
+			for (wid = 0; wid < size; wid++)
 				_putchar('#');
-			}
+
+			if (hgt == size - 1)
+				continue;
 			_putchar('\n');
 		}
 	}
+
+	_putchar('\n');
 }
