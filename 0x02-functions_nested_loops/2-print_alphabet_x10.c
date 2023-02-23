@@ -1,19 +1,21 @@
 #include "main.h"
+
 /**
- * print_alphabet - entry point
+ * print_alphabet_x10 - entry point
  *
- * Description: prints the alphabet in lowercase
+ * Description: prints alphabets
  */
 void print_alphabet_x10(void)
 {
-    char i;
-    int j;
+	char i;
+	int n;
 
-    for (j = 0; j<10; j++){
-	    for (i = 'a'; i <= 'z'; i++)
-	    {
-		    _putchar(i);
-	    }
-	    _putchar('\n');
-    }
+	for (n = 1; n <= 10; n++)
+	{
+		for (i = 'a'; i <= 'z'; i++)
+		{
+			_putchar(i);
+		}
+		_putchar('\n');
+	}
 }
